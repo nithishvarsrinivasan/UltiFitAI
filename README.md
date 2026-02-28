@@ -1,6 +1,6 @@
 # UltiFitAI — AI-Driven Behavioural Fitness Intelligence Assistant
 
-
+Project demo: https://youtu.be/dbrlQloNjp8
 ---
 
 ##  Project Overview
