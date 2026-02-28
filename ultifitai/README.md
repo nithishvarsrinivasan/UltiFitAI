@@ -1,20 +1,21 @@
-# 🧠 BehaviourAI — AI-Driven Behavioural Fitness Intelligence Assistant
-**Powered by OpenClaw (Claude API)**
+# UltiFitAI — AI-Driven Behavioural Fitness Intelligence Assistant
+
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
-BehaviourAI is a next-generation fitness assistant that goes beyond tracking — it **learns your habits, detects behaviour patterns, predicts unhealthy actions, and intervenes with smart nudges** using real AI.
+UltiFitAI is a next-generation fitness assistant that goes beyond tracking — it **learns your habits, detects behaviour patterns, predicts unhealthy actions, and intervenes with smart nudges** using real AI.
 
-The core AI engine, **OpenClaw**, is powered by the **Anthropic Claude API** and is embedded directly into the app.
+The core AI engine, is powered by the **Custom Openrouter API** and is embedded directly into the app.
+One would need their API key with enough credits run the AI features.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
-behaviourAI/
+ultifitai/
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -58,7 +59,7 @@ behaviourAI/
 
 ### 1. Install dependencies
 ```bash
-cd behaviourAI
+cd ultifitai
 npm install
 ```
 
@@ -72,6 +73,7 @@ Then open `.env` and replace the placeholder:
 VITE_OPENROUTER_API_KEY=your-openrouter-api-key-here
 ```
 Get your key from: **https://openrouter.ai/keys**
+since this is local project and not production grade yet, buy credits if you want to experience AI features 
 
 ### 3. Run the app
 ```bash
@@ -91,11 +93,11 @@ Open [http://localhost:3000](http://localhost:3000)
 | Key location | `.env` → `VITE_OPENROUTER_API_KEY` |
 | Hook file | `src/hooks/useAICoach.js` |
 
-⚠️ **Never commit your `.env` file** — it's already in `.gitignore`.
+ **Never commit your `.env` file** — it's already in `.gitignore`.
 
 ---
 
-## 🔬 Behavioural Analytics Modules
+##  Behavioural Analytics Modules
 
 | Feature | Method | File |
 |---|---|---|
@@ -110,7 +112,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📊 Pages
+##  Pages
 
 | Page | Description |
 |---|---|
@@ -122,7 +124,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🏆 Key Innovation: Behaviour Score Index (BSI)
+## Key Metric: Behaviour Score Index (BSI)
 
 A custom metric invented for this project that combines:
 - Sleep quality (30% weight)
@@ -136,7 +138,7 @@ Produces a single 0–100 score, updated daily.
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 - Connect real wearable data (Fitbit, Apple Health API)
 - Train actual ML models on 90-day+ user history
 - Add push notification system for nudges
