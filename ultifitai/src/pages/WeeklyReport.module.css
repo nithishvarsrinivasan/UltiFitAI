@@ -1,0 +1,118 @@
+.topRow {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.weekLabel {
+  font-size: 10px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.verdict {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.verdictDesc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+  max-width: 420px;
+}
+
+.statRow { display: flex; gap: 12px; }
+
+.statChip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.statLabel {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Insights */
+.insightCard {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  animation: fade-in 0.3s ease both;
+}
+
+.insightIcon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+
+.insightTag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+
+.insightText { font-size: 13px; line-height: 1.55; }
+
+/* Recommendation */
+.reco {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.recoIcon { font-size: 24px; flex-shrink: 0; }
+
+.recoText { font-size: 14px; line-height: 1.7; }
+
+.recoFooter {
+  font-size: 10px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+/* Goals */
+.goalRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.goalRow:last-child { border-bottom: none; }
+
+.goalDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.goalText { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+
+.goalImpact { font-size: 11px; color: var(--muted); }

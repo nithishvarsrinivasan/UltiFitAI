@@ -1,0 +1,78 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+}
+
+.checkRow {
+  display: flex;
+  gap: 24px;
+  margin: 10px 0 18px;
+}
+
+.btn {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), #9333ea);
+  color: white;
+  transition: all 0.2s;
+}
+
+.btn:hover { opacity: 0.88; transform: translateY(-1px); }
+
+.btnSaved {
+  background: linear-gradient(135deg, var(--green), #059669) !important;
+}
+
+/* Analysis */
+.bsiRow {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.dayBsiLabel {
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.dayBsiScore {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+
+.predsBlock { flex: 1; padding-top: 8px; }
+
+.alerts { display: flex; flex-direction: column; gap: 8px; }
+
+.alert {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 8px;
+  animation: fade-in 0.3s ease both;
+}
+
+.alertMsg {
+  font-size: 13px;
+  line-height: 1.5;
+}
